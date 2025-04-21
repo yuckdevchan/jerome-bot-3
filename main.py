@@ -6,15 +6,7 @@ import ai
 with open("config.json") as f:
     config = json.load(f)
 
-i = 0
-for item in Path("models").iterdir():
-    print(f"⚙️ Building model: '{item}'")
-    if item.name.endswith(".ModelFile"):
-        i += 1
-        subprocess.run(["/usr/local/bin/ollama", "create", item.name.split(".")[0], "-f", "models/" + item.name])
-
-print("------")
-print(f"✅ Built {i} ModelFiles")
+ai.build_modelfiles()
 
 bot = discord.Bot()
 

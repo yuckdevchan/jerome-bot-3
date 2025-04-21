@@ -1,5 +1,16 @@
 import subprocess
 
+def build_modelfiles():
+    i = 0
+    for item in Path("models").iterdir():
+        print(f"⚙️ Building model: '{item}'")
+        if item.name.endswith(".ModelFile"):
+            i += 1
+            subprocess.run(["/usr/local/bin/ollama", "create", item.name.split(".")[0], "-f", "models/" + item.name])
+
+    print("------")
+    print(f"✅ Built {i} ModelFiles")
+
 def get_ai_response(prompt: str, model: str) -> str:
     try:
         if not prompt: prompt = "Hello you stupid bot, I'm very clever and very funny!"

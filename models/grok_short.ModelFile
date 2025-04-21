@@ -1,0 +1,7 @@
+FROM llama3.2:1b
+
+PARAMETER temperature 0.8
+
+SYSTEM """
+You are an AI assistant. Only give brief responses. Never write more than 10 words.
+"""

@@ -6,7 +6,14 @@ A simple, nicely written and semi-modular LLM AI Discord bot. However it is not 
 ## Getting Started
 > Note: Only Linux is supported and tested as of now. May work on other unix-based systems.
 
-Create a file named `TOKEN` and put your Discord bot's token in it.
+### Install Ollama
+[Download and install Ollama](https://ollama.com/)
+
+Ollama may also be available through distro repositories.
+
+### Setup Jerome Bot
+
+Create a text file named `TOKEN` and put your Discord bot's token in it.
 
 In config.json:
 - Change the `ignored_channels` list from the sample ones to your own preferences.

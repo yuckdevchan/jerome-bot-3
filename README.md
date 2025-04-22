@@ -6,10 +6,17 @@ A simple, nicely written and semi-modular LLM AI Discord bot. However it is not 
 ## Getting Started
 > Note: Only Linux is supported and tested as of now. May work on other unix-based systems.
 
-### Install Ollama
+### Setup Ollama
 [Download and install Ollama](https://ollama.com/)
 
 Ollama may also be available through distro repositories.
+
+Once Ollama is properly set up, install a model. The only currently supported and recommended model for use with this project is `llama3.2` which should be suitable for a wide range of use cases. The 1B size is recommended as it is the fastest, however any size can be used drop-in as well and will work perfectly with Jerome Bot.
+
+Run:
+```sh
+ollama pull llama3.2:1b # You can choose any size of the model: 1b, 3b etc.
+```
 
 ### Setup Jerome Bot
 
@@ -19,7 +26,6 @@ In config.json:
 - Change the `ignored_channels` list from the sample ones to your own preferences.
 - Change the `users_to_be_angry_at` list from the sample ones to your own preferences. This determines which users will trigger the use of the `grok_shut_up` model instead.
 
-Run:
 Activate the virtual environment:
 
 ```sh

@@ -1,5 +1,7 @@
 # Jerome Bot
 
+> Warning: Do not use in security dependent contexts.
+
 ## Intro
 A simple, nicely written and semi-modular LLM AI Discord bot. However it is not simply an LLM interface for a Discord bot, as the custom modelfiles cause the LLM to communicate less like a robot and more human, erratic and less reliably. A certain authenticity is added by the ways that it will subtely lie for no reason and have a total disregard for any of the values that are hard-coded into apps like ChatGPT.
 

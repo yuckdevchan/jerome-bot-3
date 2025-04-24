@@ -49,3 +49,23 @@ python3 main.py # Run Jerome Bot
 It will first try and build the ModelFiles, and put them into Ollama.
 
 If it is able to connect to Discord and run the bot, then it will be confirmed in the output.
+
+## Bot Usage
+
+### Interacting using @Mentions
+For example:
+```
+@Jerome Bot, are you conscious? 
+```
+After the message, the bot should react with an emoji to your message and respond shortly.
+
+### Interacting via Slash Commands
+To simply ask the bot a question, use the following command and enter the prompt.
+```
+/ask
+```
+
+To ask the bot a question, with specification of the model used for the response and whether the message is shown only to the prompting user (ephemeral) or not.
+```
+/ask_with_model
+```

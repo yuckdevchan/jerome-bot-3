@@ -62,10 +62,10 @@ After the message, the bot should react with an emoji to your message and respon
 ### Interacting via Slash Commands
 To simply ask the bot a question, use the following command and enter the prompt.
 ```
-/ask
+/ask prompt: [Are you conscious?]
 ```
 
 To ask the bot a question, with specification of the model used for the response and whether the message is shown only to the prompting user (ephemeral) or not.
 ```
-/ask_with_model
+/ask_with_model model: [jerome_short] prompt: [Are you conscious?] private: [Yes]
 ```

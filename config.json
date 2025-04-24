@@ -1,13 +1,25 @@
 {
-    "ignored_channels": [
-        1329615212533252237,
-        1122966762422550610
-    ],
-    "users_to_be_angry_at": [
-        754290125290340356
-    ],
+    "bot_name": "Jerome",
+    "simple_bot_name": "jerome",
+    "ignored_channels": [],
+    "users_to_be_angry_at": [],
     "activity": {
-        "name": "X",
-        "url": "https://x.com/"
-    }
+        "name": "a fool",
+        "url": null
+    },
+    "pre_made_responses": [
+        "Haha, true!",
+        "Are you being for real right now?",
+        "That's a good one!",
+        "I can't believe you just said that!",
+        "You really think so?",
+        "That's a bold statement!",
+        "I don't know about that one!",
+        "That's a hot take!",
+        "Interesting perspective!",
+        "I see where you're coming from!",
+        "That's a unique way to look at it!",
+        "True, true, true!"
+    ],
+    "speechless": "I'm speechless."
 }
